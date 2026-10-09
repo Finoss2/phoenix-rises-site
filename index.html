@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PHOENIX Lab Journal & Portfolio">
+  <title>PHOENIX Lab Journal & Portfolio</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --background: #10131a;
+      --surface: #191e29;
+      --text: #f3f5f8;
+      --muted: #b6bfce;
+      --accent: #ff9b54;
+      --line: #303949;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font: 16px/1.6 system-ui, sans-serif;
+    }
+
+    header, main, footer {
+      width: min(100% - 2rem, 960px);
+      margin-inline: auto;
+    }
+
+    header {
+      padding: 1.25rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand { font-weight: 750; letter-spacing: .08em; }
+
+    nav { display: flex; flex-wrap: wrap; gap: .9rem; }
+
+    a { color: var(--accent); }
+    nav a { color: var(--text); text-decoration: none; }
+    nav a:hover { color: var(--accent); }
+
+    main { padding: 3rem 0; }
+
+    .hero {
+      padding: 3rem 2rem;
+      border: 1px solid var(--line);
+      border-radius: 1rem;
+      background: linear-gradient(135deg, #242331, #191e29);
+    }
+
+    .eyebrow { color: var(--accent); font-weight: 700; }
+    h1 { font-size: clamp(2.3rem, 7vw, 4.5rem); line-height: 1.05; margin: .5rem 0 1rem; }
+    h2 { margin-top: 0; }
+    section { padding: 2.5rem 0; border-bottom: 1px solid var(--line); }
+    .muted { color: var(--muted); }
+    .card {
+      padding: 1.25rem;
+      border: 1px solid var(--line);
+      border-radius: .75rem;
+      background: var(--surface);
+    }
+    footer { padding: 1.5rem 0; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">PHOENIX</div>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#journey">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#blog">Learning</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <p class="eyebrow">Lab Journal &amp; Portfolio</p>
+      <h1>Learning, building, rising.</h1>
+      <p class="muted">
+        PHOENIX is a personal learning journey in technology and hands-on projects.
+        This site will share public, carefully reviewed notes as the journey develops.
+      </p>
+    </section>
+
+    <section id="journey">
+      <h2>About the Journey</h2>
+      <p>
+        This is a place to document what I’m learning, reflect on challenges,
+        and share useful outcomes along the way. The detailed engineering archive
+        remains private; this site will contain only reviewed public summaries.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="card">
+        <h3>Project portfolio</h3>
+        <p class="muted">
+          Public project write-ups will be added here after the work is complete
+          and the details have been reviewed for sharing.
+        </p>
+        <p>Status: <strong>Getting started</strong></p>
+      </div>
+    </section>
+
+    <section id="blog">
+      <h2>Learning Blog</h2>
+      <div class="card">
+        <h3>First entry coming soon</h3>
+        <p class="muted">
+          Future posts will cover learning notes, reflections, and verified
+          project milestones.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        You can reach me through my
+        <a href="https://github.com/Finoss2">GitHub profile</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>PHOENIX Lab Journal &amp; Portfolio · Public notes, shared thoughtfully.</p>
+  </footer>
+</body>
+</html>
